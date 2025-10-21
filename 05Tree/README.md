@@ -24,6 +24,7 @@ A tree is a finite set composed by `n` nodes ($n>0$)
     Nodes with the same parent
   - [x] Level and Depth of node
     ![alt text](image.png)
+    *Fig1. Show depth and level of Tree*
 
 ## 2. Properties of Tree
 
@@ -32,4 +33,14 @@ A tree is a finite set composed by `n` nodes ($n>0$)
 - [ ] Property 3: A k-ary tree with depth $h$ has at most $\frac{k^h-1}{k-1}$ nodes
 - [ ] Property 4: The minimum depth of a k-ary tree with $n$ nodes is $$\lceil\log_k(n\times(k-1)+1)\rceil$$
 
-##
+## 3. Binary Tree
+
+A binary tree is a `𝑘-ary` tree where $k=2$
+
+  ![Tree](image1.png)
+  *Fig2. 5 different forms of binary tree*
+
+### 3.1 Property
+
+- [x] Property 1: If a binary tree has $n_0$ leaves and $n_2$ 2-d nodes, then $$n_0 = n_2 + 1$$
+- [x] Property 2:
