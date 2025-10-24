@@ -23,7 +23,7 @@ A tree is a finite set composed by `n` nodes ($n>0$)
   - [x] Sibling node
     Nodes with the same parent
   - [x] Level and Depth of node
-    ![alt text](image.png)
+    ![alt text](pic/image.png)
     *Fig1. Show depth and level of Tree*
 
 ## 2. Properties of Tree
@@ -38,7 +38,7 @@ A tree is a finite set composed by `n` nodes ($n>0$)
 
 A binary tree is a `𝑘-ary` tree where $k=2$
 
-  ![Tree](image1.png)
+  ![Tree](pic/image1.png)
   *Fig2. 5 different forms of binary tree*
 
 ### 3.1 Property
@@ -49,10 +49,10 @@ A binary tree is a `𝑘-ary` tree where $k=2$
 - [x] Property 3: A binary tree with depth h has at most $2^h-1$ nodes
 - [x] Property 4: Depth of a complete binary tree with n nodes is 
   $$\lceil \log_2(n+1)\rceil$$
-  ![](img1.png)
+  ![](pic/img1.png)
   *Fig3*
 
-  ![](img2.png)
+  ![](pic/img2.png)
   *Fig4*
 
 - [x] Property 5: Number a complete binary tree with N nodes in the sequence of the top to end and left to right from 0 to $n-1$, the for each node i:
@@ -67,7 +67,7 @@ A binary tree is a `𝑘-ary` tree where $k=2$
 
   - Sequentail implementation: stored as `complete binary tree`
 
-    ![](img3.png)
+    ![](pic/img3.png)
     
   - Linked implementation: 
 
@@ -78,8 +78,8 @@ A binary tree is a `𝑘-ary` tree where $k=2$
         struct tnode 		*rchild;
     }TreeNode;
     ```
-    ![](img4.png)
+    ![](pic/img4.png)
 
   - Comparison
 
-    ![](img5.png)
+    ![](pic/img5.png)
