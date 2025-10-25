@@ -31,7 +31,7 @@ A tree is a finite set composed by `n` nodes ($n>0$)
 - [x] Property 1: The number of nodes in a tree equals the degrees of all nodes plus 1
 - [x] Property 2: If the level of a k-ary tree starts from 1, there are at most $k^{i−1}$ nodes at layer $i$ in a tree（$i\ge 1$）
 - [x] Property 3: A k-ary tree with depth $h$ has at most $\frac{k^h-1}{k-1}$ nodes
-- [x] Property 4: The minimum depth of a k-ary tree with $n$ nodes is 
+- [x] Property 4: The minimum depth of a k-ary tree with $n$ nodes is
   $$\lceil\log_k(n\times(k-1)+1)\rceil$$
 
 ## 3. Binary Tree
@@ -43,16 +43,16 @@ A binary tree is a `𝑘-ary` tree where $k=2$
 
 ### 3.1 Property
 
-- [x] Property 1: If a binary tree has $n_0$ leaves and $n_2$ 2-d nodes, then 
+- [x] Property 1: If a binary tree has $n_0$ leaves and $n_2$ 2-d nodes, then
   $$n_0 = n_2 + 1$$
-- [x] Property 2: If the level of a binary tree starts from 1, then there are at most $2^{i-1}(i\ge 1)$  nodes in layer i  
+- [x] Property 2: If the level of a binary tree starts from 1, then there are at most $2^{i-1}(i\ge 1)$  nodes in layer i
 - [x] Property 3: A binary tree with depth h has at most $2^h-1$ nodes
-- [x] Property 4: Depth of a complete binary tree with n nodes is 
+- [x] Property 4: Depth of a complete binary tree with n nodes is
   $$\lceil \log_2(n+1)\rceil$$
-  ![](pic/img1.png)
+  ![relationship](pic/img1.png)
   *Fig3*
 
-  ![](pic/img2.png)
+  ![explain](pic/img2.png)
   *Fig4*
 
 - [x] Property 5: Number a complete binary tree with N nodes in the sequence of the top to end and left to right from 0 to $n-1$, the for each node i:
@@ -63,23 +63,24 @@ A binary tree is a `𝑘-ary` tree where $k=2$
   - if i is odd and $i\le n-2$, then its `right sibling` is $i+1$; Or it has no `right sibling`
   - the `level` of i is $[\log_2(i+2)]$
 
-  ## 3.2 Implementation 
+  ## 3.2 Implementation
 
   - Sequentail implementation: stored as `complete binary tree`
 
-    ![](pic/img3.png)
-    
-  - Linked implementation: 
+    ![low space sfficiency](pic/img3.png)
+
+  - Linked implementation:
 
     ```cpp
     typedef struct tnode{
-        ElemType 		data;
-        struct tnode 		*lchild;
-        struct tnode 		*rchild;
+        ElemType data;
+        struct tnode *lchild;
+        struct tnode *rchild;
     }TreeNode;
     ```
-    ![](pic/img4.png)
+
+    ![structure of tree](pic/img4.png)
 
   - Comparison
 
-    ![](pic/img5.png)
+    ![comparison table](pic/img5.png)
